@@ -1,6 +1,6 @@
 {
   "name": "react-native-device-motion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "iOS device motion wrapper for React Native. ",
   "main": "DeviceMotion.ios.js",
   "scripts": {

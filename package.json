@@ -1,0 +1,26 @@
+{
+  "name": "react-native-device-motion",
+  "version": "0.1.0",
+  "description": "iOS device motion wrapper for React Native. ",
+  "main": "DeviceMotion.ios.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paramaggarwal/react-native-device-motion.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "device",
+    "motion",
+    "react-native"
+  ],
+  "author": "Param Aggarwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paramaggarwal/react-native-device-motion/issues"
+  },
+  "homepage": "https://github.com/paramaggarwal/react-native-device-motion#readme"
+}

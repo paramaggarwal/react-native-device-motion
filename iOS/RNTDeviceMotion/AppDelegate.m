@@ -17,6 +17,7 @@
 {
   NSURL *jsCodeLocation;
 
+#if TARGET_IPHONE_SIMLULATOR
   /**
    * Loading JavaScript code - uncomment the one you want.
    *
@@ -30,9 +31,8 @@
    * `inet` value under `en0:`) and make sure your computer and iOS device are
    * on the same Wi-Fi network.
    */
-
   jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"];
-
+#else
   /**
    * OPTION 2
    * Load from pre-bundled file on disk. To re-generate the static bundle
@@ -43,10 +43,11 @@
    * see http://facebook.github.io/react-native/docs/runningondevice.html
    */
 
-//   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-
+   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+#endif
+  
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"RNTDeviceMotionExample"
+                                                      moduleName:@"RNTDeviceMotion"
                                                    launchOptions:launchOptions];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
